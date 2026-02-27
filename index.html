@@ -63,6 +63,28 @@
         margin: 16px 0;
         border-radius: 0 8px 8px 0;
       }
+      .nav-links {
+        margin-bottom: 32px;
+        display: flex;
+        gap: 16px;
+      }
+      .nav-links a {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #1a1a2e;
+        border: 1px solid #333;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        transition: background 0.2s;
+      }
+      .nav-links a:hover {
+        background: #252545;
+      }
+      .nav-links a.active {
+        background: #4da6ff;
+        color: #fff;
+        border-color: #4da6ff;
+      }
       .footer {
         margin-top: 60px;
         padding-top: 20px;
@@ -76,14 +98,20 @@
     <div class="container">
       <h1>Privacy Policy</h1>
       <p class="subtitle">
-        LineLib — Software Commands Reference · Last updated: February 18, 2026
+        LineLib — Software Commands Reference · Last updated: February 27, 2026
       </p>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
 
       <h2>Introduction</h2>
       <p>
         LineLib ("we", "our", or "the app") is a software commands reference
-        application. We are committed to protecting your privacy. This Privacy
-        Policy explains how we handle information when you use our application.
+        application developed by SupportAiCoder. We are committed to protecting
+        your privacy. This Privacy Policy explains how we handle information
+        when you use our application.
       </p>
 
       <h2>Information We Collect</h2>
@@ -104,6 +132,30 @@
         <li>Search history — not stored</li>
       </ul>
 
+      <h2>Advertising</h2>
+      <div class="highlight">
+        <p>
+          LineLib displays advertisements through
+          <strong>Google AdMob</strong> (interstitial and rewarded ads).
+        </p>
+      </div>
+      <p>
+        AdMob may collect and use data as described in Google's privacy policy.
+        This may include:
+      </p>
+      <ul>
+        <li>Advertising identifiers</li>
+        <li>General location data (IP-based)</li>
+        <li>Device information for ad personalization</li>
+      </ul>
+      <p>
+        You can manage your ad preferences through your device settings. For
+        more information, see
+        <a href="https://policies.google.com/privacy" target="_blank"
+          >Google's Privacy Policy</a
+        >.
+      </p>
+
       <h2>AI Assistant Feature</h2>
       <div class="highlight">
         <p>
@@ -112,15 +164,33 @@
           connection.
         </p>
       </div>
-      <p>
-        When you use the AI Assistant:
-      </p>
+      <p>When you use the AI Assistant:</p>
       <ul>
-        <li>Your questions are sent to <strong>OpenRouter</strong> (a third-party AI API service) for processing.</li>
-        <li>Only the text of your question is transmitted — <strong>no personal data, device information, or usage analytics</strong> are included.</li>
-        <li>The AI is restricted to answering questions about 3D modeling and 2D design software only.</li>
-        <li>Questions and responses are <strong>not stored on any server</strong>. They exist only in memory during your app session.</li>
-        <li>OpenRouter's privacy policy can be found at: <a href="https://openrouter.ai/privacy" target="_blank">openrouter.ai/privacy</a></li>
+        <li>
+          Your questions are sent to <strong>OpenRouter</strong> (a third-party
+          AI API service) for processing.
+        </li>
+        <li>
+          Only the text of your question is transmitted —
+          <strong
+            >no personal data, device information, or usage analytics</strong
+          >
+          are included.
+        </li>
+        <li>
+          The AI is restricted to answering questions about 3D modeling and 2D
+          design software only.
+        </li>
+        <li>
+          Questions and responses are <strong>not stored on any server</strong>.
+          They exist only in memory during your app session.
+        </li>
+        <li>
+          OpenRouter's privacy policy can be found at:
+          <a href="https://openrouter.ai/privacy" target="_blank"
+            >openrouter.ai/privacy</a
+          >
+        </li>
       </ul>
       <p>
         The AI Assistant has a daily usage limit and does not process questions
@@ -128,27 +198,31 @@
       </p>
 
       <h2>Third-Party Services</h2>
-      <p>
-        LineLib uses the following third-party service:
-      </p>
+      <p>LineLib uses the following third-party services:</p>
       <ul>
-        <li><strong>OpenRouter API</strong> — Used exclusively for the AI Assistant feature. No personal data is shared. Only the text of user questions about software commands is transmitted.</li>
+        <li>
+          <strong>Google AdMob</strong> — Used for displaying advertisements
+          (interstitial and rewarded ads). AdMob may collect device information
+          for ad personalization.
+        </li>
+        <li>
+          <strong>OpenRouter API</strong> — Used exclusively for the AI
+          Assistant feature. No personal data is shared. Only the text of user
+          questions about software commands is transmitted.
+        </li>
       </ul>
-      <p>
-        LineLib does not integrate with any analytics, advertising, or tracking services.
-      </p>
 
       <h2>Internet Access</h2>
       <p>
         LineLib's core functionality (browsing commands and shortcuts) works
-        <strong>entirely offline</strong>. Internet access is only required for
-        the optional AI Assistant feature.
+        <strong>entirely offline</strong>. Internet access is required for the
+        AI Assistant feature and for displaying advertisements.
       </p>
 
       <h2>Children's Privacy</h2>
       <p>
-        LineLib does not collect any personal information from anyone, including
-        children under the age of 13. The app is safe for users of all ages.
+        LineLib does not knowingly collect personal information from children
+        under the age of 13. The app is safe for users of all ages.
       </p>
 
       <h2>Changes to This Policy</h2>
@@ -156,13 +230,6 @@
         We may update this Privacy Policy from time to time. Any changes will be
         reflected on this page with an updated revision date.
       </p>
-
-      <h2>Contact</h2>
-      <p>
-        If you have any questions about this Privacy Policy, you can contact us
-        at:
-      </p>
-      <p><a href="mailto:ramcosari3@gmail.com">ramcosari3@gmail.com</a></p>
 
       <h2>Trademark Notice</h2>
       <p>
@@ -174,6 +241,22 @@
         of these companies. The use of these names is solely for the purpose of
         identifying the software whose commands are referenced.
       </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy, you can contact us
+        at:
+      </p>
+      <ul>
+        <li>
+          <strong>iOS:</strong>
+          <a href="mailto:ramoosari@icloud.com">ramoosari@icloud.com</a>
+        </li>
+        <li>
+          <strong>Android:</strong>
+          <a href="mailto:ramcosari3@gmail.com">ramcosari3@gmail.com</a>
+        </li>
+      </ul>
 
       <div class="footer">
         <p>© 2026 LineLib. All rights reserved.</p>
